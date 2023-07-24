@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+     <!-- website image -->
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/bookmark.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <head>
+          <h1 class="text-center py-5">Bookmarker</h1>
+        </head>
+        <div class="form py-4">
+          <h2 class="text-center">
+            <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <label for="siteName" class="py-2"><i class="fa-solid fa-book-bookmark"></i> Site Name</label >
+          <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name">
+          <p id="alert1" class="alert alert-danger d-none"></p>
+
+          <label for="siteUrl" class="py-2 mt-3"><i class="fa-solid fa-link"></i> Site URL</label>
+          <input type="text" id="siteUrl" class="form-control" placeholder="Website URL">
+          <p id="alert2" class="alert alert-danger d-none"></p>
+          <button onclick="addSite()" id="submit" class="btn mx-auto btn-danger px-5 d-block mt-4">Submit</button>
+        </div>
+        <table class="text-center table table-light my-3">
+          <thead>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+main {
+  min-height: 100vh;
+  background-color: #f7ecde;
+}
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  font-family: "Pacifico", cursive;
+  isolation: isolate;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 14%;
+    left: 0;
+    bottom: 51px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+h1:hover::before{
+    height: 25%;
+}
+
+.container .form {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+h2 {
+  font-size: 25px;
+  margin: 0 auto;
+  font-family: 'Righteous', cursive;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  width: fit-content;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+label{
+    font-weight: 700;
+}
+a{
+  
+}
+
